@@ -1,8 +1,8 @@
-##TypeScript component templates for JetBrains PHPStorm IDE
+## TypeScript component templates for JetBrains PHPStorm IDE
 Add this templates in your PHPStorm settings and create React components easily. 
 
 
-###TypeScript simple component
+### TypeScript simple component
 ```typescript
 import * as React from "react";
 
@@ -16,7 +16,7 @@ export class ${NAME} extends React.Component {
 
 ```
 
-###TypeScript component with props
+### TypeScript component with props
 ```typescript
 import * as React from "react";
 import * as PropTypes from "prop-types";
@@ -41,7 +41,7 @@ export class ${NAME} extends React.Component<${NAME}Props> {
 
 ```
 
-###TypeScript component with state
+### TypeScript component with state
 ```typescript
 import * as React from "react";
 
@@ -61,7 +61,7 @@ export class ${NAME} extends React.Component<{}, ${NAME}State> {
 
 ```
 
-###TypeScript component with state and props
+### TypeScript component with state and props
 ```typescript
 import * as React from "react";
 import * as PropTypes from "prop-types";
