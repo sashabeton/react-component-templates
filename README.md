@@ -176,3 +176,34 @@ export default function ${NAME}(props: ${NAME}Props): JSX.Element {
 
 ```
 Example of state same as for template `TypeScript component with state`
+
+### Typescript component with context
+#### Class style:
+```typescript
+import * as React from "react";
+
+const ${NAME}Context = React.createContext(null);
+
+export default class ${NAME} extends React.Component {
+    public render() {
+        return <${NAME}Context.Provider value={null}>
+            
+        </${NAME}Context.Provider>;
+    }
+}
+
+```
+#### Functional style:
+```typescript
+import React from "react";
+
+const ${NAME}Context = React.createContext(null);
+
+#set($CONTEXT = $NAME.toLowerCase())
+export default function ${NAME}(): JSX.Element {
+    const ${CONTEXT} = React.useContext(${NAME}Context);
+
+    return <></>;
+}
+
+```
